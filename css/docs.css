@@ -1,0 +1,110 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+/* Global Variables */
+:root {
+  --main-page-text-color: #363442;
+  --light-grey: #F1F3F5;
+  --pure-white: #FFFFFF;
+  --white: #e8e8fd;
+  --black: #18181B;
+  --dark: #20232A;
+  --grey: #E5E7EB;
+}
+
+/* Default Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: auto auto;
+}
+
+.highlight {
+  background-color: var(--grey);
+  font-family: monospace;
+}
+
+.demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.demo-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* No Scrollbar */
+::-webkit-scrollbar {
+  display: none;  
+}
+
+/* SITE HEADER */
+.site-header {
+  background-color: var(--dark);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  grid-column: 1/4;
+}
+
+.site-header .site-logo {
+  font-size: 2rem;
+}
+
+.site-header .site-logo-img {
+  width: 2.5rem;
+}
+
+.site-header .site-header-nav {
+  margin-left: auto;
+}
+
+.site-header-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* SIDE NAVIGATION */
+aside {
+  grid-column: 1/2;
+  background-color: var(--light-grey);
+}
+
+.side-nav a{
+  text-decoration: none;
+}
+
+/* MAIN CONTENT */
+main {
+  grid-column: 2/4;
+}
+
+section .section-header {
+  font-size: 3rem;
+}
+
+main article {
+  padding: 1rem;
+  width: 90%;
+}
+
+article p {
+  margin-bottom: 1rem;
+}
+
+article iframe {
+  margin: 1.5rem auto;
+}

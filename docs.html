@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRESCENT UI | DOCS</title>
+  <!-- favicon -->
+  <link rel="icon" href="img/favicon.png">
+  <!-- crescent ui components stylesheet -->
+  <link rel="stylesheet" href="https://crescent-components.netlify.app/css/crescent.css">
+  <!-- base stylesheet -->
+  <link rel="stylesheet" href="/css/docs.css">
+</head>
+
+<body>
+  <header class="site-header p-1">
+    <img src="img/icon.png" class="site-logo-img" alt="">
+    <span class="site-logo mx-1">CRESCENT UI</span>
+    <div class="site-header-nav">
+      <a href="index.html" class="mx-1">Home</a>
+      <a href="https://github.com/codingwolf-at/crescent-ui" target="_blank" class="mx-1">GitHub</a>
+      <a href="https://codingwolf-at.github.io" target="_blank" class="mx-1">About Me</a>
+    </div>
+  </header>
+
+  <aside>
+    <div class="side-nav p-1">
+      <h3>Components</h3>
+      <a href="#getting-started">Getting Started</a>
+    </div>
+  </aside>
+
+  <main class="p-2">
+    <!-- Getting Started -->
+    <section id="getting-started">
+      <header class="section-header">Getting Started</header>
+      <article>
+        <p>
+          To get started with CRESCENT UI the only thing which you need to do is to include our stylesheet
+          <span class="highlight">&lt;link&gt;</span> in the <span class="highlight">&lt;head&gt;</span> of your html
+          document.
+        </p>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fcrescent-components.netlify.app%252Fcss%252Fcrescent.css%2522%253E%250A"
+          style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </article>
+    </section>
+
+    <!-- Avatar -->
+    <section id="avatar">
+      <header class="section-header">Avatar</header>
+      <article>
+        <p>
+          Build beautiful circular avatars for your site. All you need do to is add the <span
+            class="highlight">avatar</span> class to any <span class="highlight">&lt;img&gt;</span> element and our
+          library will take care of the rest.
+        </p>
+        <p>
+          Make sure the image you are using is having 1:1 ratio, i.e., a square picture having the same hight and width
+          or else if you use any rectangular picture then this may result in an oval avatar.
+        </p>
+        <div class="demo">
+          <img src="img/avatar/avatar (1).png" class="avatar mx-1" alt="avatar image">
+          <img src="img/avatar/avatar (2).png" class="avatar mx-1" alt="avatar image">
+          <img src="img/avatar/avatar (3).png" class="avatar mx-1" alt="avatar image">
+          <img src="img/avatar/avatar (4).png" class="avatar mx-1" alt="avatar image">
+        </div>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522img%252Favatar%252Favatar%2520%281%29.png%2522%2520class%253D%2522avatar%2522%2520alt%253D%2522avatar%2520image%2522%253E"
+          style="width: 100%; height: auto; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </article>
+    </section>
+
+    <!-- Alert -->
+    <section id="alert">
+      <header class="section-header">Alert</header>
+      <article>
+        <p>
+          Provide contextual feedback messages for typical user actions with the handful of available and flexible alert
+          messages.
+          Alerts are available for any length of text, as well as an optional close button. For proper styling, use one
+          of the seven required contextual classes
+        </p>
+        <div class="demo-column">
+          <div class="alert alert-primary">
+            A simple primary alert - check it out!
+            <span class="alert-btn">X</span>
+          </div>
+          <div class="alert alert-secondary">
+            A simple secondary alert - check it out!
+            <span class="alert-btn">X</span>
+          </div>
+          <div class="alert alert-dark">
+            A simple dark alert - check it out!
+            <span class="alert-btn">X</span>
+          </div>
+          <div class="alert alert-success">
+            A simple success alert - check it out!
+            <span class="alert-btn">X</span>
+          </div>
+          <div class="alert alert-danger">
+            A simple danger alert - check it out!
+            <span class="alert-btn">X</span>
+          </div>
+          <div class="alert alert-warning">
+            A simple warning alert - check it out!
+            <span class="alert-btn">X</span>
+          </div>
+          <div class="alert alert-info">
+            A simple info alert - check it out!
+            <span class="alert-btn">X</span>
+          </div>
+        </div>
+
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253E%250A%2520%2520A%2520simple%2520primary%2520alert%2520-%2520check%2520it%2520out%21%250A%2520%2520%253Cspan%2520class%253D%2522alert-btn%2522%253EX%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253E%250A%2520%2520A%2520simple%2520secondary%2520alert%2520-%2520check%2520it%2520out%21%250A%2520%2520%253Cspan%2520class%253D%2522alert-btn%2522%253EX%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-dark%2522%253E%250A%2520%2520%2520A%2520simple%2520dark%2520alert%2520-%2520check%2520it%2520out%21%250A%2520%2520%2520%253Cspan%2520class%253D%2522alert-btn%2522%253EX%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%250A%2520%2520%2520A%2520simple%2520success%2520alert%2520-%2520check%2520it%2520out%21%250A%2520%2520%2520%253Cspan%2520class%253D%2522alert-btn%2522%253EX%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253E%250A%2520%2520%2520A%2520simple%2520danger%2520alert%2520-%2520check%2520it%2520out%21%250A%2520%2520%2520%253Cspan%2520class%253D%2522alert-btn%2522%253EX%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%250A%2520%2520%2520A%2520simple%2520warning%2520alert%2520-%2520check%2520it%2520out%21%250A%2520%2520%2520%253Cspan%2520class%253D%2522alert-btn%2522%253EX%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Cdiv%2520class%253D%2522alert%2520alert-info%2522%253E%250A%2520%2520%2520A%2520simple%2520info%2520alert%2520-%2520check%2520it%2520out%21%250A%2520%2520%2520%253Cspan%2520class%253D%2522alert-btn%2522%253EX%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+          style="width: 800px; height: 685px; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+      </article>
+    </section>
+
+    <h1>test</h1>
+    <h2></h2>
+
+    <!-- template -->
+    <section id="">
+      <header class="section-header"></header>
+      <article>
+        <p></p>
+        <div class="demo"></div>
+      </article>
+    </section>
+  </main>
+
+
+</body>
+
+</html>
