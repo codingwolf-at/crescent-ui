@@ -3,6 +3,7 @@
 
 /* Global Variables */
 :root {
+  /* color */
   --main-page-text-color: #363442;
   --light-grey: #F1F3F5;
   --pure-white: #FFFFFF;
@@ -10,6 +11,8 @@
   --black: #18181B;
   --dark: #20232A;
   --grey: #E5E7EB;
+  /* spacing */
+  --side-nav-width: 18rem;
 }
 
 /* Default Styling */
@@ -21,9 +24,6 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-  grid-template-rows: auto auto;
 }
 
 .highlight {
@@ -57,7 +57,7 @@ body {
   color: var(--white);
   display: flex;
   align-items: center;
-  grid-column: 1/4;
+  margin-left: var(--side-nav-width);
 }
 
 .site-header .site-logo {
@@ -79,8 +79,17 @@ body {
 
 /* SIDE NAVIGATION */
 aside {
-  grid-column: 1/2;
+  width: var(--side-nav-width);
   background-color: var(--light-grey);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  top: 0;
+  left: 0;
+}
+
+.side-nav {
+  padding: 2rem;
 }
 
 .side-nav a{
@@ -89,7 +98,7 @@ aside {
 
 /* MAIN CONTENT */
 main {
-  grid-column: 2/4;
+  margin-left: var(--side-nav-width);
 }
 
 section .section-header {
