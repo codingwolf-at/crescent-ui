@@ -155,3 +155,7 @@ article iframe {
 .nav {
   margin-bottom: 1rem;
 }
+
+.rounded {
+  width: 70%;
+}
