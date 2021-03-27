@@ -40,6 +40,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  /* max-width: 50rem; */
 }
 
 .demo-column {
@@ -48,6 +49,20 @@ body {
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  /* max-width: 50rem; */
+}
+
+.demo-column-stretch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 1rem;
+}
+
+/* Overriding CRESCENT CSS */
+.nav {
+  margin-bottom: 1rem;
 }
 
 /* No Scrollbar */
