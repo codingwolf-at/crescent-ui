@@ -60,9 +60,11 @@ body {
   padding: 1rem;
 }
 
-/* Overriding CRESCENT CSS */
-.nav {
-  margin-bottom: 1rem;
+.demo-div {
+  background-color: var(--grey);
+  height: 15rem;
+  width: 15rem; 
+  margin: 0.5rem;
 }
 
 /* No Scrollbar */
@@ -103,7 +105,7 @@ aside {
   position: fixed;
   height: 100%;
   overflow: auto;
-  top: 0;
+  top: 0;  
   left: 0;
 }
 
@@ -136,10 +138,19 @@ main article {
   width: 90%;
 }
 
+article h2 {
+  margin-bottom: 0.5rem;
+}
+
 article p {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 article iframe {
   margin: 1.5rem auto;
+}
+
+/* Overriding CRESCENT CSS */
+.nav {
+  margin-bottom: 1rem;
 }
