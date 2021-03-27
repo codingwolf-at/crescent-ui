@@ -84,3 +84,7 @@ body {
     grid-template-columns: 1fr 1fr;
     place-content: center;
 }
+
+.main-page-grid img {
+    border-radius: 0.5rem;
+}
