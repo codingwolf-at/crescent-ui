@@ -53,7 +53,7 @@ body {
 
 /* Full Page Card 2 */
 .full-page-card-two {
-    background-color: var(--pure-white);
+    background-color: var(--grey);
     height: 100vh;
     color: var(--main-page-text-color);
     position: relative;
