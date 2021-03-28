@@ -29,9 +29,12 @@ html {
   font-family: monospace;
 }
 
+pre {
+  padding: 1rem;
+}
+
 code {
   border-radius: 0.5rem;
-  width: 90%;
 }
 
 .demo {
