@@ -1,7 +1,7 @@
 /* Global Variables */
 :root {
   /* color */
-  --main-page-text-color: #363442;
+  --header-bg: #1F2937;
   --light-grey: #F1F3F5;
   --pure-white: #FFFFFF;
   --white: #e8e8fd;
@@ -42,7 +42,6 @@ code {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  /* max-width: 50rem; */
 }
 
 .demo-column {
@@ -51,7 +50,6 @@ code {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  /* max-width: 50rem; */
 }
 
 .demo-column-stretch {
@@ -71,7 +69,7 @@ code {
 
 /* SITE HEADER */
 .site-header {
-  background-color: var(--dark);
+  background-color: var(--header-bg);
   color: var(--white);
   display: flex;
   align-items: center;
