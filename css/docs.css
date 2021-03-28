@@ -29,6 +29,11 @@ html {
   font-family: monospace;
 }
 
+code {
+  border-radius: 0.5rem;
+  width: 90%;
+}
+
 .demo {
   display: flex;
   justify-content: center;
@@ -59,11 +64,6 @@ html {
   height: 15rem;
   width: 15rem; 
   margin: 0.5rem;
-}
-
-/* No Scrollbar */
-::-webkit-scrollbar {
-  display: none;  
 }
 
 /* SITE HEADER */
