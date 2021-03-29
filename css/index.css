@@ -1,6 +1,3 @@
-/* Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
-
 /* Global Variables */
 :root {
     --main-page-text-color: #363442;
@@ -30,10 +27,8 @@ body {
 
 /* Full Page Card 1 */
 .full-page-card-one {
-    background-image: url(/img/bg-one_1280x800.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url(/img/bg-one_1280x800.jpg) center/cover no-repeat;
+    /* background-size: cover; */
     height: 100vh;  
     color: var(--white);
 }
