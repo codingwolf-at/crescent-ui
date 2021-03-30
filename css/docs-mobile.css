@@ -137,7 +137,14 @@
     margin-bottom: 1rem;
   }
 
+  .nav {
+    padding: 0.5rem;
+  }
   .nav .nav-brand {
     font-size: 1.5rem;
+  }
+
+  .nav .nav-link-container {
+    display: flex;
   }
 }
