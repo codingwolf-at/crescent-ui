@@ -38,6 +38,7 @@ body {
     justify-content: flex-end;
     height: 85vh;
     width: 60%;
+    margin-left: 3rem;
 }
 
 .main-heading {
