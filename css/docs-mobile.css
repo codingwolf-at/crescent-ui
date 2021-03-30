@@ -43,23 +43,30 @@
     background-color: var(--header-bg);
     color: var(--white);
     display: flex;
+    flex-direction: column;
     padding: 1rem;
     align-items: center;
+    justify-content: center;
     margin-left: 0;
     width: 100%;
   }
 
   .site-header .site-logo {
-    font-size: 1rem;
+    font-size: 2rem;
     margin-left: 0;
   }
 
   .site-header .site-logo-img {
-    display: none;
+    display: none ;
   }
 
   .site-header .site-header-nav {
-    display: none;
+    display: flex;
+    margin: 0.5rem auto;
+  }
+
+  .site-header-nav a {
+    margin-left: 0  ;
   }
 
   /* SIDE NAVIGATION */
