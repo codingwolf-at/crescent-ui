@@ -1,7 +1,7 @@
 @media screen and (max-width: 480px) {
 
   pre {
-    padding: 1rem;
+    padding: 0rem;
   }
 
   code {
@@ -99,16 +99,16 @@
   /* MAIN CONTENT */
   main {
     margin-left: 0;
-    padding: 2rem
+    padding: 1rem
   }
 
   section .section-header {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   main article {
-    padding: 1rem;
-    width: 90%;
+    padding: 1rem 0rem;
+    width: 100%;
   }
 
   article h2 {
