@@ -1,36 +1,5 @@
 @media screen and (max-width: 480px) {
 
-  /* Global Variables */
-  :root {
-    /* color */
-    --header-bg: #1F2937;
-    --light-grey: #F1F3F5;
-    --pure-white: #FFFFFF;
-    --white: #e8e8fd;
-    --black: #18181B;
-    --dark: #20232A;
-    --grey: #E5E7EB;
-    /* spacing */
-    --side-nav-width: 15rem;
-    --header-height: 4.37rem;
-  }
-
-  /* Default Styling */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  .highlight {
-    background-color: var(--grey);
-    font-family: monospace;
-  }
-
   pre {
     padding: 1rem;
   }
@@ -76,25 +45,21 @@
     display: flex;
     padding: 1rem;
     align-items: center;
-    margin-left: var(--side-nav-width);
+    margin-left: 0;
+    width: 100%;
   }
 
   .site-header .site-logo {
-    font-size: 2rem;
+    font-size: 1rem;
+    margin-left: 0;
   }
 
   .site-header .site-logo-img {
-    width: 2.5rem;
+    display: none;
   }
 
   .site-header .site-header-nav {
-    margin-left: auto;
-  }
-
-  .site-header-nav a {
-    color: white;
-    text-decoration: none;
-    margin: auto 1rem;
+    display: none;
   }
 
   /* SIDE NAVIGATION */
@@ -106,6 +71,7 @@
     overflow: auto;
     top: 0%;
     left: 0;
+    display: none;
   }
 
   .side-nav {
@@ -125,7 +91,7 @@
 
   /* MAIN CONTENT */
   main {
-    margin-left: var(--side-nav-width);
+    margin-left: 0;
     padding: 2rem
   }
 
