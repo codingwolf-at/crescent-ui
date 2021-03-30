@@ -83,3 +83,7 @@ body {
 .main-page-grid img {
     border-radius: 0.5rem;
 }
+
+.right-div {
+    padding: 4rem;
+}
