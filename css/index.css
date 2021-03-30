@@ -28,8 +28,7 @@ body {
 /* Full Page Card 1 */
 .full-page-card-one {
     background: url(/img/bg-one_1280x800.jpg) center/cover no-repeat;
-    /* background-size: cover; */
-    height: 100vh;  
+    height: 100vh;
     color: var(--white);
 }
 
