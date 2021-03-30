@@ -22,17 +22,11 @@
   }
 
   /* Full Page Card 2 */
-  .full-page-card-two {
-      background-color: var(--grey);
-      height: 100vh;
-      color: var(--main-page-text-color);
-      position: relative;
-  }
-
   .version-text {
       position: absolute;
-      left: 1rem;
+      left: 2rem;
       top: 1rem;
+      font-size: 1.5rem;
   }
 
   .version-text2 {
@@ -41,22 +35,30 @@
   }
 
   .main-page-nav {
-      display: flex;
-      width: 100%;
-      justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 3rem;
   }
 
   .main-page-grid {
-      width: 80%;
-      height: 500px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      place-content: center;
+      width: 100%;
+      height: auto;
+      display: block;
   }
 
-  .main-page-grid img {
-      border-radius: 0.5rem;
+  .left-div {
+    display: none;
+  }
+
+  .right-div {
+    padding: 1.3rem;
+    width: 80%;
+  }
+
+  .right-div .btn {
+    margin-left: 0;
   }
 
 }
