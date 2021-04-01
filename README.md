@@ -4,7 +4,7 @@
 
 > __Under Development__ 🛠
 
-> __v0.0__ &alpha;-release 
+> __v0.0__ &alpha;-release 🚀 
 
 ## Getting Started
 
