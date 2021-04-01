@@ -20,7 +20,8 @@ Read the official documentation [here](https://crescent-ui-alpha.netlify.app/doc
 
 ## Components
 
-Current version includes : 
+Current version includes 
+
 - Avatar
 - Alert
 - Badge
