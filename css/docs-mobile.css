@@ -1,0 +1,150 @@
+@media screen and (max-width: 480px) {
+
+  pre {
+    padding: 0rem;
+  }
+
+  code {
+    border-radius: 0.5rem;
+  }
+
+  .demo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .demo-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .demo-column-stretch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 1rem;
+  }
+
+  .demo-div {
+    background-color: var(--grey-color);
+    height: 15rem;
+    width: 15rem;
+    margin: 0.5rem;
+  }
+
+  /* SITE HEADER */
+  .site-header {
+    background-color: var(--header-bg-color);
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .site-header .site-logo {
+    font-size: 2rem;
+    margin-left: 0;
+  }
+
+  .site-header .site-logo-img {
+    display: none ;
+  }
+
+  .site-header .site-header-nav {
+    display: flex;
+    margin: 0.5rem auto;
+  }
+
+  .site-header-nav a {
+    margin-left: 0  ;
+  }
+
+  /* SIDE NAVIGATION */
+  aside {
+    width: var(--side-nav-width);
+    background-color: var(--light-grey-color);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  .side-nav {
+    padding: 1.5rem 2rem;
+  }
+
+  .side-nav-heading {
+    margin-bottom: 1rem;
+  }
+
+  .side-nav a {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* MAIN CONTENT */
+  main {
+    margin-left: 0;
+    padding: 1rem
+  }
+
+  section .section-header {
+    font-size: 2rem;
+  }
+
+  main article {
+    padding: 1rem 0rem;
+    width: 100%;
+  }
+
+  article h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  article p {
+    margin-bottom: 0.5rem;
+  }
+
+  article iframe {
+    margin: 1.5rem auto;
+  }
+
+  /* Overriding CRESCENT CSS */
+  .nav {
+    margin-bottom: 1rem;
+  }
+
+  .rounded {
+    width: 70%;
+  }
+
+  .avatar {
+    margin-bottom: 1rem;
+  }
+
+  .nav {
+    padding: 0.5rem;
+  }
+  .nav .nav-brand {
+    font-size: 1.5rem;
+  }
+
+  .nav .nav-link-container {
+    display: flex;
+  }
+}
