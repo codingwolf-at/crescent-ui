@@ -1,13 +1,10 @@
 /* Global Variables */
 :root {
   /* color */
-  --header-bg: #1F2937;
-  --light-grey: #F1F3F5;
-  --pure-white: #FFFFFF;
-  --white: #e8e8fd;
-  --black: #18181B;
-  --dark: #20232A;
-  --grey: #E5E7EB;
+  --header-bg-color: #1F2937;
+  --light-grey-color: #F1F3F5;
+  --white-color: #e8e8fd;
+  --grey-color: #E5E7EB;
   /* spacing */
   --side-nav-width: 15rem;
   --header-height: 4.37rem;
@@ -25,7 +22,7 @@ html {
 }
 
 .highlight {
-  background-color: var(--grey);
+  background-color: var(--grey-color);
   font-family: monospace;
 }
 
@@ -61,7 +58,7 @@ code {
 }
 
 .demo-div {
-  background-color: var(--grey);
+  background-color: var(--grey-color);
   height: 15rem;
   width: 15rem; 
   margin: 0.5rem;
@@ -69,8 +66,8 @@ code {
 
 /* SITE HEADER */
 .site-header {
-  background-color: var(--header-bg);
-  color: var(--white);
+  background-color: var(--header-bg-color);
+  color: var(--white-color);
   display: flex;
   padding: 1rem;
   align-items: center;
@@ -99,11 +96,11 @@ code {
 /* SIDE NAVIGATION */
 aside {
   width: var(--side-nav-width);
-  background-color: var(--light-grey);
+  background-color: var(--light-grey-color);
   position: fixed;
   height: 100%;
   overflow: auto;
-  top: 0%;
+  top: 0;
   left: 0;
 }
 

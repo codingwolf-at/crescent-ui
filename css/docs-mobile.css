@@ -33,7 +33,7 @@
   }
 
   .demo-div {
-    background-color: var(--grey);
+    background-color: var(--grey-color);
     height: 15rem;
     width: 15rem;
     margin: 0.5rem;
@@ -41,8 +41,8 @@
 
   /* SITE HEADER */
   .site-header {
-    background-color: var(--header-bg);
-    color: var(--white);
+    background-color: var(--header-bg-color);
+    color: var(--white-color);
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -73,11 +73,11 @@
   /* SIDE NAVIGATION */
   aside {
     width: var(--side-nav-width);
-    background-color: var(--light-grey);
+    background-color: var(--light-grey-color);
     position: fixed;
     height: 100%;
     overflow: auto;
-    top: 0%;
+    top: 0;
     left: 0;
     display: none;
   }

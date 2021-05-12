@@ -1,12 +1,8 @@
 /* Global Variables */
 :root {
     --main-page-text-color: #363442;
-    --primary-blue: #0101fe;
-    --pure-white: #FFFFFF;
-    --white: #e8e8fd;
-    --black: #18181B;
-    --dark: #20232A;
-    --grey: #E5E7EB;
+    --white-color: #e8e8fd;
+    --grey-color: #E5E7EB;
 }
 
 /* Default Styling */
@@ -29,7 +25,7 @@ body {
 .full-page-card-one {
     background: url(/img/bg-one_1280x800.jpg) center/cover no-repeat;
     height: 100vh;
-    color: var(--white);
+    color: var(--white-color);
 }
 
 .main-page-div {
@@ -48,7 +44,7 @@ body {
 
 /* Full Page Card 2 */
 .full-page-card-two {
-    background-color: var(--grey);
+    background-color: var(--grey-color);
     height: 100vh;
     color: var(--main-page-text-color);
     position: relative;
