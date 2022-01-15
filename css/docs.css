@@ -1,0 +1,156 @@
+/* Global Variables */
+:root {
+  /* color */
+  --header-bg-color: #1F2937;
+  --light-grey-color: #F1F3F5;
+  --white-color: #e8e8fd;
+  --grey-color: #E5E7EB;
+  /* spacing */
+  --side-nav-width: 15rem;
+  --header-height: 4.37rem;
+}
+
+/* Default Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.highlight {
+  background-color: var(--grey-color);
+  font-family: monospace;
+}
+
+pre {
+  padding: 1rem;
+}
+
+code {
+  border-radius: 0.5rem;
+}
+
+.demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.demo-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.demo-column-stretch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 1rem;
+}
+
+.demo-div {
+  background-color: var(--grey-color);
+  height: 15rem;
+  width: 15rem; 
+  margin: 0.5rem;
+}
+
+/* SITE HEADER */
+.site-header {
+  background-color: var(--header-bg-color);
+  color: var(--white-color);
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  margin-left: var(--side-nav-width);
+}
+
+.site-header .site-logo {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.site-header .site-logo-img {
+  width: 2.5rem;
+}
+
+.site-header .site-header-nav {
+  margin-left: auto;
+}
+
+.site-header-nav a {
+  color: white;
+  text-decoration: none;
+  margin: auto 1rem;
+}
+
+/* SIDE NAVIGATION */
+aside {
+  width: var(--side-nav-width);
+  background-color: var(--light-grey-color);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  top: 0;
+  left: 0;
+}
+
+.side-nav {
+  padding: 1.5rem 2rem;
+}
+
+.side-nav-heading {
+  margin-bottom: 1rem;
+}
+
+.side-nav a{
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+/* MAIN CONTENT */
+main {
+  margin-left: var(--side-nav-width);
+  padding: 2rem
+}
+
+section .section-header {
+  font-size: 3rem;
+}
+
+main article {
+  padding: 1rem;
+  width: 90%;
+}
+
+article h2 {
+  margin-bottom: 0.5rem;
+}
+
+article p {
+  margin-bottom: 0.5rem;
+}
+
+article iframe {
+  margin: 1.5rem auto;
+}
+
+/* Overriding CRESCENT CSS */
+.nav {
+  margin-bottom: 1rem;
+}
+
+.rounded {
+  width: 70%;
+}

@@ -1,0 +1,65 @@
+/* ---------- Mobile View ---------- */
+@media screen and (max-width: 480px) {
+
+  /* Full Page Card 1 */
+  .main-page-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+      width: 70%;
+      margin-left: 1rem;
+  }
+
+  .main-heading {
+      font-size: 3rem;
+      font-weight: 700;
+  }
+
+  .main-page-div h2 {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  /* Full Page Card 2 */
+  .version-text {
+      position: absolute;
+      left: 2rem;
+      top: 1rem;
+      font-size: 1.5rem;
+  }
+
+  .version-text2 {
+      opacity: 0.7;
+      font-size: 1rem;
+  }
+
+  .main-page-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 3rem;
+  }
+
+  .main-page-grid {
+      width: 100%;
+      height: auto;
+      display: block;
+  }
+
+  .left-div {
+    display: none;
+  }
+
+  .right-div {
+    padding: 1.3rem;
+    width: 80%;
+    margin-top: 4rem;
+  }
+
+  .right-div .btn {
+    margin-left: 0;
+  }
+
+}

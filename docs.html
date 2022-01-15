@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRESCENT UI | DOCS</title>
+  <!-- favicon -->
+  <link rel="icon" href="img/favicon.png">
+  <!-- crescent ui components stylesheet -->
+  <link rel="stylesheet" href="https://crescent-components.netlify.app/css/crescent.css">
+  <!-- base stylesheet -->
+  <link rel="stylesheet" href="/css/docs.css">
+  <!-- base stylesheet for mobile view -->
+  <link rel="stylesheet" href="/css/docs-mobile.css">
+  <!-- highlight js css CDN -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/default.min.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <img src="img/icon.png" class="site-logo-img" alt="">
+    <span class="site-logo">CRESCENT UI</span>
+    <div class="site-header-nav">
+      <a href="index.html">Home</a>
+      <a href="https://github.com/codingwolf-at/crescent-ui" target="_blank">GitHub</a>
+      <a href="https://codingwolf-at.github.io" target="_blank">About Me</a>
+    </div>
+  </header>
+
+  <aside>
+    <div class="side-nav">
+      <h2 class="side-nav-heading">Components</h2>
+      <a href="#getting-started">Getting Started</a>
+      <a href="#avatar">Avatar</a>
+      <a href="#alert">Alert</a>
+      <a href="#badge">Badge</a>
+      <a href="#button">Button</a>
+      <a href="#card">Card</a>
+      <a href="#image">Image</a>
+      <a href="#input">Input</a>
+      <a href="#navbar">Navbar</a>
+      <a href="#spacing-utilities">Spacing Utilities</a>
+      <a href="#typography">Typography</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- Getting Started -->
+    <section id="getting-started">
+      <header class="section-header">Getting Started</header>
+      <article>
+        <p>
+          To get started with CRESCENT UI the only thing which you need to do is to include our stylesheet
+          <span class="highlight">&lt;link&gt;</span> in the <span class="highlight">&lt;head&gt;</span> of your html
+          document.
+        </p>
+  
+        <pre><code>
+&lt;link rel="stylesheet" href="https://crescent-components.netlify.app/css/crescent.css"&gt;
+        </code></pre>
+      </article>
+    </section>
+
+    <!-- Avatar -->
+    <section id="avatar">
+      <header class="section-header">Avatar</header>
+      <article>
+        <p>
+          Build beautiful circular avatars for your site. All you need do to is add the <span
+            class="highlight">avatar</span> class to any <span class="highlight">&lt;img&gt;</span> element and our
+          library will take care of the rest.
+        </p>
+        <p>
+          Make sure the image you are using is having 1:1 ratio, i.e., a square picture having the same hight and width
+          or else if you use any rectangular picture then this may result in an oval avatar.
+        </p>
+        <div class="demo">
+          <img src="img/avatar/avatar (1).png" class="avatar mx-1" alt="avatar image">
+          <img src="img/avatar/avatar (2).png" class="avatar mx-1" alt="avatar image">
+          <img src="img/avatar/avatar (3).png" class="avatar mx-1" alt="avatar image">
+          <img src="img/avatar/avatar (4).png" class="avatar mx-1" alt="avatar image">
+        </div>
+        <pre><code>
+&lt;img src="img/avatar/avatar (1).png" class="avatar" alt="avatar image"> 
+        </code></pre>
+      </article>
+    </section>
+
+    <!-- Alert -->
+    <section id="alert">
+      <header class="section-header">Alert</header>
+      <article>
+        <p>
+          Provide contextual feedback messages for typical user actions with the handful of available and flexible alert
+          messages.
+          Alerts are available for any length of text, as well as an optional close button. For proper styling, use one
+          of the seven required contextual classes
+        </p>
+        <div class="demo-column">
+          <div class="alert alert-primary">
+            A simple primary alert - check it out!
+            <span class="alert-btn">X</span>
+          </div>
+          <div class="alert alert-secondary">
+            A simple secondary alert - check it out!
+            <span class="alert-btn">X</span>
+          </div>
+          <div class="alert alert-dark">
+            A simple dark alert - check it out!
+            <span class="alert-btn">X</span>
+          </div>
+          <div class="alert alert-success">
+            A simple success alert - check it out!
+            <span class="alert-btn">X</span>
+          </div>
+          <div class="alert alert-danger">
+            A simple danger alert - check it out!
+            <span class="alert-btn">X</span>
+          </div>
+          <div class="alert alert-warning">
+            A simple warning alert - check it out!
+            <span class="alert-btn">X</span>
+          </div>
+          <div class="alert alert-info">
+            A simple info alert - check it out!
+            <span class="alert-btn">X</span>
+          </div>
+        </div>
+
+        <pre><code>
+&lt;div class="alert alert-primary">
+  A simple primary alert - check it out!
+  &lt;span class="alert-btn">X&lt;/span>
+&lt;/div>
+
+&lt;div class="alert alert-secondary">
+  A simple secondary alert - check it out!
+  &lt;span class="alert-btn">X&lt;/span>
+&lt;/div>
+
+&lt;div class="alert alert-dark">
+    A simple dark alert - check it out!
+    &lt;span class="alert-btn">X&lt;/span>
+&lt;/div>
+
+&lt;div class="alert alert-success">
+    A simple success alert - check it out!
+    &lt;span class="alert-btn">X&lt;/span>
+&lt;/div>
+          
+&lt;div class="alert alert-danger">
+    A simple danger alert - check it out!
+    &lt;span class="alert-btn">X&lt;/span>
+&lt;/div>
+          
+&lt;div class="alert alert-warning">
+    A simple warning alert - check it out!
+    &lt;span class="alert-btn">X&lt;/span>
+&lt;/div>
+          
+&lt;div class="alert alert-info">
+    A simple info alert - check it out!
+    &lt;span class="alert-btn">X&lt;/span>
+&lt;/div>          
+        </code></pre>
+
+      </article>
+    </section>
+
+    <!-- Badge -->
+    <section id="badge">
+      <header class="section-header">Badge</header>
+      <article>
+        <p>
+          Badges can be used on both icon and avatar, for showing a count or any notification or online/offline status
+          of the avatar etc.
+        </p>
+
+        <div class="demo">
+          <div>
+            <img src="/img/icon-badge/home-key.png" alt="icon with badge">
+            <span class="badge">NEW</span>
+          </div>
+          <div>
+            <img class="avatar" src="img/avatar/avatar (4).png" alt="avatar with badge">
+            <span class="badge-avatar">22</span>
+          </div>
+          <div>
+            <img class="avatar" src="img/avatar/avatar (2).png" alt="avatar with badge">
+            <span class="badge-avatar">O</span>
+          </div>
+        </div>
+
+        <pre><code>
+&lt;div>
+  &lt;img src="/img/icon-badge/home-key.png" alt="icon with badge">
+  &lt;span class="badge">NEW&lt;/span>
+&lt;/div>
+
+&lt;div>
+  &lt;img class="avatar" src="img/avatar/avatar (4).png" alt="avatar badge">
+  &lt;span class="badge-avatar">22&lt;/span>
+&lt;/div>
+
+&lt;div>
+  &lt;img class="avatar" src="img/avatar/avatar (2).png" alt="avatar badge">
+  &lt;span class="badge-avatar">O&lt;/span>
+&lt;/div>
+        </code></pre>
+
+      </article>
+    </section>
+
+    <!-- Buttons -->
+    <section id="button">
+      <header class="section-header">Button</header>
+      <article>
+        <p>
+          Use our custom button styles for actions in forms, dialogs, and more.
+          CRESCENT UI includes several predefined button styles, each serving its own semantic purpose, with a few
+          extras thrown in for more control.
+        </p>
+        <div class="demo">
+          <button class="btn btn-primary">Primary</button>
+          <button class="btn btn-secondary">Secondary</button>
+          <button class="btn btn-dark">Dark</button>
+          <button class="btn btn-success">Success</button>
+          <button class="btn btn-danger">Danger</button>
+          <button class="btn btn-warning">Warning</button>
+          <button class="btn btn-info">Info</button>
+        </div>
+        <div class="demo-column">
+          <button class="btn btn-primary btn-block">Primary Block</button>
+          <button class="btn btn-secondary btn-block">Secondary Block</button>
+          <button class="btn btn-dark btn-block">Dark Block</button>
+        </div>
+
+        <pre><code>
+&lt;button class="btn btn-primary">
+  Primary
+&lt;/button>
+  
+&lt;button class="btn btn-secondary">
+  Secondary
+&lt;/button>
+
+&lt;button class="btn btn-dark">
+  Dark
+&lt;/button>
+          
+&lt;button class="btn btn-success">
+  Success
+&lt;/button>
+          
+&lt;button class="btn btn-danger">
+  Danger
+&lt;/button>
+      
+&lt;button class="btn btn-warning">
+  Warning
+&lt;/button>
+
+&lt;button class="btn btn-info">
+  Info
+&lt;/button>
+        </code></pre>
+
+        <pre><code>
+&lt;button class="btn btn-primary btn-block">
+  Primary Block
+&lt;/button>
+
+&lt;button class="btn btn-secondary btn-block">
+  Secondary Block
+&lt;/button>
+
+&lt;button class="btn btn-dark btn-block">
+  Dark Block
+&lt;/button>
+        </code></pre>
+      </article>
+    </section>
+
+    <!-- Card -->
+    <section id="card">
+      <header class="section-header">Card</header>
+      <article>
+        <p>
+          A card is a flexible and extensible content container. It includes options for headers and footers, a wide
+          variety of content, contextual background colors, and powerful display options. Cards are built with as little
+          markup and styles as possible, but still manage to deliver a ton of control and customization. Built with
+          flexbox, they offer easy alignment and mix well with other CRESCENT UI components.
+        </p>
+        <div class="demo">
+          <div class="card">
+            <img src="img/card/32.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h2>Micky T-shirt</h2>
+              <h4>Price: 449/-</h4>
+              <button class="btn btn-primary btn-block">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/card/34.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h2>Lost T-shirt</h2>
+              <h4>Price: 549/-</h4>
+              <button class="btn btn-primary btn-block">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/card/35.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h2>Marvel T-shirt</h2>
+              <h4>Price: 449/-</h4>
+              <button class="btn btn-primary btn-block">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+        <pre><code>
+&lt;div class="card">
+  &lt;img src="img/card/32.jpg" class="card-img-top" alt="">
+  &lt;div class="card-body">
+      &lt;h2>Micky T-shirt&lt;/h2>
+      &lt;h4>Price: 449/-&lt;/h4>
+      &lt;button class="btn btn-primary btn-block">ADD TO CART&lt;/button>
+  &lt;/div>
+&lt;/div>
+        </code></pre>
+
+      </article>
+    </section>
+
+    <!-- Image -->
+    <section id="image">
+      <header class="section-header">Image</header>
+      <article>
+        <h2>Responsive Images</h2>
+        <p>
+          Images in CRESCENT UI are made responsive with <span class="highlight">.img-fluid</span> class. This applies
+          <span class="highlight">max-width: 100%;</span> and <span class="highlight">height: auto;</span> to the image
+          so that it scales with the parent element.
+        </p>
+        <div class="demo">
+          <img class="img-fluid" src="img/img/res.jpg" alt="responsive image">
+        </div>
+
+        <pre><code>
+&lt;img class="img-fluid" src="img/img/res.jpg" alt="responsive image">
+        </code></pre>
+
+        <h2>Round Image</h2>
+        <p>
+          You can create rounded images by adding <span class="highlight">rounded</span> class to it. Just make sure
+          the image you are using is of same width and height or else it may result into an oval shaped image.
+        </p>
+        <div class="demo">
+          <img src="img/img/res2.jpg" class="img-fluid rounded" alt="rounded image">
+        </div>
+
+        <pre><code>
+&lt;img src="img/img/res2.jpg" class="rounded" alt="rounded image">
+        </code></pre>
+
+      </article>
+    </section>
+
+    <!-- Input -->
+    <section id="input">
+      <header class="section-header">Input</header>
+      <article>
+        <p>
+          Add class <span class="highlight">input</span> to your input elements to make them sleek and modern.
+        </p>
+        <div class="demo">
+          <input type="text" class="input" placeholder="THIS IS AN INPUT FIELD">
+        </div>
+
+        <pre><code>
+&lt;input type="text" class="input" placeholder="THIS IS AN INPUT FIELD">
+        </code></pre>
+
+      </article>
+    </section>
+
+    <!-- Navbar -->
+    <section id="navbar">
+      <header class="section-header">Navbar</header>
+      <article>
+        <p>
+          Modern navbar made using flexbox which is responsive in nature and offer one brand logo and a set of nev
+          links.
+          You can use just <span class="highlight">nav</span> class for a transparent navbar or use <span
+            class="highlight">nav-primary</span>, <span class="highlight">nav-secondary</span> or <span
+            class="highlight">nav-dark</span> for navbars with different coloured backgrounds
+        </p>
+        <div class="demo-column-stretch">
+          <nav class="nav">
+            <span class="nav-brand">Site Logo</span>
+            <div class="nav-link-container">
+              <a href="javascript:void(0)" class="nav-link">Home</a>
+              <a href="javascript:void(0)" class="nav-link">Contact</a>
+              <a href="javascript:void(0)" class="nav-link">Services</a>
+            </div>
+          </nav>
+          <nav class="nav nav-primary">
+            <span class="nav-brand">Site Logo</span>
+            <div class="nav-link-container">
+              <a href="javascript:void(0)" class="nav-link">Home</a>
+              <a href="javascript:void(0)" class="nav-link">Contact</a>
+              <a href="javascript:void(0)" class="nav-link">Services</a>
+            </div>
+          </nav>
+          <nav class="nav nav-secondary">
+            <span class="nav-brand">Site Logo</span>
+            <div class="nav-link-container">
+              <a href="javascript:void(0)" class="nav-link">Home</a>
+              <a href="javascript:void(0)" class="nav-link">Contact</a>
+              <a href="javascript:void(0)" class="nav-link">Services</a>
+            </div>
+          </nav>
+          <nav class="nav nav-dark">
+            <span class="nav-brand">Site Logo</span>
+            <div class="nav-link-container">
+              <a href="javascript:void(0)" class="nav-link">Home</a>
+              <a href="javascript:void(0)" class="nav-link">Contact</a>
+              <a href="javascript:void(0)" class="nav-link">Services</a>
+            </div>
+          </nav>
+        </div>
+
+        <pre><code>
+&lt;nav class="nav">
+  &lt;span class="nav-brand">Site Logo&lt;/span>
+  &lt;div class="nav-link-container">
+      &lt;a href="#" class="nav-link">Home&lt;/a>
+      &lt;a href="#" class="nav-link">Contact&lt;/a>
+      &lt;a href="#" class="nav-link">Services&lt;/a>
+  &lt;/div>
+&lt;/nav>
+
+&lt;nav class="nav nav-primary">
+  &lt;span class="nav-brand">Site Logo&lt;/span>
+  &lt;div class="nav-link-container">
+      &lt;a href="#" class="nav-link">Home&lt;/a>
+      &lt;a href="#" class="nav-link">Contact&lt;/a>
+      &lt;a href="#" class="nav-link">Services&lt;/a>
+  &lt;/div>
+&lt;/nav>
+
+&lt;nav class="nav nav-secondary">
+  &lt;span class="nav-brand">Site Logo&lt;/span>
+  &lt;div class="nav-link-container">
+      &lt;a href="#" class="nav-link">Home&lt;/a>
+      &lt;a href="#" class="nav-link">Contact&lt;/a>
+      &lt;a href="#" class="nav-link">Services&lt;/a>
+  &lt;/div>
+&lt;/nav>
+
+&lt;nav class="nav nav-dark">
+  &lt;span class="nav-brand">Site Logo&lt;/span>
+  &lt;div class="nav-link-container">
+      &lt;a href="#" class="nav-link">Home&lt;/a>
+      &lt;a href="#" class="nav-link">Contact&lt;/a>
+      &lt;a href="#" class="nav-link">Services&lt;/a>
+  &lt;/div>
+&lt;/nav>
+        </code></pre>
+        
+      </article>
+    </section>
+
+    <!-- Spacing Utilities -->
+    <section id="spacing-utilities">
+      <header class="section-header">Spacing Utilities</header>
+      <article>
+        <p>
+          Assign responsive-friendly margin or padding values to an element or a subset of its sides with shorthand
+          classes. Includes support for individual properties, all properties, and vertical and horizontal properties.
+        </p>
+
+        <h2>Padding</h2>
+        <p>
+          Use <span class="highlight">p-1</span>, <span class="highlight">p-2</span>, <span class="highlight">p-3</span>
+          and <span class="highlight">p-4</span> for giving overall padding to components.
+        </p>
+        <p>
+          Use <span class="highlight">py-1</span>, <span class="highlight">py-2</span>, <span
+            class="highlight">py-3</span> and <span class="highlight">py-4</span> classes to give vertical padding to
+          components.
+        </p>
+        <p>
+          Use <span class="highlight">px-1</span>, <span class="highlight">px-2</span>, <span
+            class="highlight">px-3</span> and <span class="highlight">px-4</span> classes to give horizontal padding to
+          the components.
+        </p>
+
+        <div class="demo">
+          <div class="demo-div p-1">
+            This div have some padding
+          </div>
+          <div class="demo-div px-1">
+            This div have horizontal padding only
+          </div>
+          <div class="demo-div py-1">
+            This div have vertical padding only
+          </div>
+        </div>
+
+        <pre><code>
+&lt;div class="demo-div p-1">
+  This div have some padding
+&lt;/div>
+
+&lt;div class="demo-div px-1">
+  This div have horizontal padding only
+&lt;/div>
+
+&lt;div class="demo-div py-1">
+  This div have vertical padding only
+&lt;/div>
+        </code></pre>
+
+        <h2>Margin</h2>
+        <p>
+          Use <span class="highlight">m-1</span>, <span class="highlight">m-2</span>, <span class="highlight">m-3</span>
+          and <span class="highlight">m-4</span> for giving overall margin to components.
+        </p>
+        <p>
+          Use <span class="highlight">my-1</span>, <span class="highlight">my-2</span>, <span
+            class="highlight">my-3</span> and <span class="highlight">my-4</span> classes to give vertical margin to
+          components.
+        </p>
+        <p>
+          Use <span class="highlight">mx-1</span>, <span class="highlight">mx-2</span>, <span
+            class="highlight">mx-3</span> and <span class="highlight">mx-4</span> classes to give horizontal margin to
+          the components.
+        </p>
+
+        <div class="demo">
+          <div class="demo-div">
+            <p class="m-1">
+              This text have some margin
+            </p>
+          </div>
+          <div class="demo-div">
+            <p class="mx-1">
+              This text have horizontal margin
+            </p>
+          </div>
+          <div class="demo-div">
+            <p class="my-1">
+              This text have vertical margin
+            </p>
+          </div>
+        </div>
+
+        <pre><code>
+&lt;div class="demo-div">
+  &lt;p class="m-1">
+    This text have some margin
+  &lt;/p>
+&lt;/div>
+
+&lt;div class="demo-div">
+  &lt;p class="mx-1">
+    This text have horizontal margin 
+  &lt;/p>
+&lt;/div>
+
+&lt;div class="demo-div">
+  &lt;p class="my-1">
+    This text have vertical margin
+  &lt;/p>
+&lt;/div>
+        </code></pre>
+
+      </article>
+    </section>
+
+    <!-- Typography -->
+    <section id="typography">
+      <header class="section-header">Typography</header>
+      <article>
+        <h2>Display Headings</h2>
+        <p>
+          Traditional heading elements are designed to work best in the meat of your page content. When you need a
+          heading to stand out, consider using a display heading—a larger, slightly more opinionated heading style.
+        </p>
+        <div class="demo-column-stretch">
+          <h1 class="display-1">Display 1</h1>
+          <h1 class="display-2">Display 2</h1>
+          <h1 class="display-3">Display 3</h1>
+          <h1 class="display-4">Display 4</h1>
+          <h1 class="display-5">Display 5</h1>
+          <h1 class="display-6">Display 6</h1>
+        </div>
+
+        <pre><code>
+&lt;h1 class="display-1">Display 1&lt;/h1>
+          
+&lt;h1 class="display-2">Display 2&lt;/h1>
+          
+&lt;h1 class="display-3">Display 3&lt;/h1>
+          
+&lt;h1 class="display-4">Display 4&lt;/h1>
+          
+&lt;h1 class="display-5">Display 5&lt;/h1>
+          
+&lt;h1 class="display-6">Display 6&lt;/h1>
+        </code></pre>
+
+        <h2>Lead Paragraph</h2>
+        <p>
+          Make a paragraph stand out by adding <span class="highlight">lead</span> class.
+        </p>
+        <div class="demo-column-stretch">
+          <p class="lead">
+            This is a lead paragraph. <br>
+            A quick brown fox jumps over a lazy dog.
+          </p>
+        </div>
+
+        <pre><code>
+&lt;p class="lead">
+  This is a lead paragraph. &lt;br>
+  A quick brown fox jumps over a lazy dog.
+&lt;/p>
+        </code></pre>
+
+        <h2>Center Text</h2>
+        <p>
+          Make any text center aligned, just add <span class="highlight">center</span> class to it.
+        </p>
+        <div class="demo">
+          <p class="lead center">
+            This is center aligned lead text.
+          </p>
+        </div>
+
+        <pre><code>
+&lt;p class="lead center">
+  This is center aligned lead text.
+&lt;/p>
+        </code></pre>
+
+      </article>
+    </section>
+
+    <!-- template -->
+    <section id="">
+      <header class="section-header"></header>
+      <article>
+        <p></p>
+        <div class="demo"></div>
+      </article>
+    </section>
+
+
+    <!-- highlight js -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+  </main>
+
+
+</body>
+
+</html>
