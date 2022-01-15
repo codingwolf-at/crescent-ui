@@ -16,7 +16,7 @@ Just include the below CSS CDN in the `<head>` of your HTML document and you are
 
 ## Read Documentation
 
-Read the official documentation [here](https://crescent-ui-alpha.netlify.app/docs.html). 
+Read the official documentation [here](https://crescent-ui.netlify.app/docs.html). 
 
 ## Components
 
